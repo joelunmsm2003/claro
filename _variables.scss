@@ -97,12 +97,12 @@
 // Grayscale and brand colors for use across Bootstrap.
 
 // Start with assigning color names to specific hex values.
-$white:  #eff4ff !default;
-$black:  #1d1d1d  !default;
-$red:    #ee1111 !default;
+$white:  #ECEFF4 !default;
+$black:  #475762  !default;
+$red:    #475762 !default;
 $orange: #e3a21a !default;
-$yellow: #ffc40d !default;
-$green:  #00a300 !default;
+$yellow: #FBD490 !default;
+$green:  #00AD7C !default;
 $blue:   #2b5797 !default;
 $teal:   #00aba9 !default;
 $pink:   #FF4981 !default;
@@ -187,7 +187,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       #eceff4 !default;
+$body-bg:       $white !default;
 $body-color:    $gray-dark !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
@@ -197,7 +197,7 @@ $inverse-color: $gray-lighter !default;
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary !default;
+$link-color:            $green !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
@@ -329,7 +329,7 @@ $border-radius-lg:       .18rem !default;
 $border-radius-sm:       .18rem !default;
 
 $component-active-color: $white !default;
-$component-active-bg:    $blue !default;
+$component-active-bg:    $green !default;
 
 $caret-width:            .3em !default;
 
@@ -696,21 +696,21 @@ $jumbotron-bg:                   $gray-lighter !default;
 //
 // Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #eceff4 !default;
-$state-success-bg:               #00ad7c !default;
+$state-success-text:             $white !default;
+$state-success-bg:               $green !default;
 $state-success-border:           darken($state-success-bg, 5%) !default;
 
-$state-info-text:                #475762 !default;
-$state-info-bg:                  #fbd490 !default;
+$state-info-text:                $white !default;
+$state-info-bg:                  $blue !default;
 $state-info-border:              darken($state-info-bg, 7%) !default;
 
-$state-warning-text:             #eceff4 !default;
-$state-warning-bg:               #475762 !default;
+$state-warning-text:             $white !default;
+$state-warning-bg:               $yellow !default;
 $mark-bg:                        $state-warning-bg !default;
 $state-warning-border:           darken($state-warning-bg, 5%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-text:              $white !default;
+$state-danger-bg:                $red !default;
 $state-danger-border:            darken($state-danger-bg, 5%) !default;
 
 

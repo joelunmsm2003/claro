@@ -20,8 +20,66 @@
 
 {% include "header.html" %}
 
-<div class="container-fluid">
+<br>
+<section class='intro'>
 
+<div class='container'>
+      <div class="row">
+        
+
+      <div class='col-md-4 col-sm-12'>
+
+      <center><h1 class='text-danger'>Sistema de Tramite Documentario</h1></center>
+
+      <img src='/static/images/inbox.svg' class='img-fluid'>
+      </div>
+
+
+      <div class="col-md-8 col-sm-12" >
+
+       <center><h3 class='text-danger'><a href='#'>Ingresar</a>/<a href='#'>Registrarse</a></h3></center>
+
+            <form method="post" action="/ingresar/">
+
+                {% csrf_token %}
+                <div class="group">
+                  <label for="user" class="label">Username</label>
+                  <input id="user" name='username' type="text" class="input">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Password</label>
+                  <input id="pass" name='password' type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                  <input id="check" type="checkbox" class="check" checked>
+                  <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div class="group">
+                  <input type="submit" class="button" value="Sign In">
+                </div>
+
+              </form>
+                
+      </div> 
+
+
+
+
+
+
+      </div>
+
+
+      </div>
+
+
+
+</section>
+<div class="container">
+
+
+
+<br>
 <div class="row">
   
           <div class="col-6">
@@ -30,7 +88,8 @@
               Subir Base
             </div>
             <div class="card-block">
-              <h4 class="card-title">Special title treatment</h4>
+              <h4 class="card-title">Gestionar base</h4>
+              <h3><i class="fa fa-upload text-success" aria-hidden="true"></i></h3>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="/subir" class="btn btn-primary">Subir</a>
             </div>
@@ -45,7 +104,7 @@
               Gestionar
             </div>
             <div class="card-block">
-              <h4 class="card-title">Special title treatment</h4>
+              <h4 class="card-title">Gestionar Clientes</h4>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="btn btn-primary">Gestionar</a>
             </div>
@@ -70,6 +129,16 @@
   
 </body>
 </html>
+
+
+
+<style type="text/css">
+  
+
+  .intro{
+    margin: 0 auto !important;
+  }
+</style>
 
 <!-- <!DOCTYPE html>
 <html >

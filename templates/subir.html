@@ -29,53 +29,53 @@
 
   <h5>Subir excel con datos de de cuentas y sus detalles para importar</h5>
   <br>
-  <form>
-    <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">Año</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputEmail3" placeholder="Año">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Mes</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Mes">
-      </div>
-    </div>
 
-       <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Proveedor</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Proveedor">
-      </div>
-    </div>
+<form method="post" action="/uploadfile" enctype="multipart/form-data">
+{% csrf_token %}
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Año</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name='anio' value='1992' placeholder="Año">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Mes</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name='mes' value='02' placeholder="Mes">
+            </div>
+          </div>
 
-           <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Cartera</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Cartera">
-      </div>
-    </div>
+             <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Proveedor</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name='proveedor' value='Lost' placeholder="Proveedor">
+            </div>
+          </div>
 
-      <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Eliga un archivo</label>
-      <div class="col-sm-10">
-        <input type="file" " id="inputPassword3" placeholder="Archivo">
-      </div>
-    </div>
+                 <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Cartera</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name='cartera' value='Huevito' placeholder="Cartera">
+            </div>
+          </div>
+
+            <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Eliga un archivo</label>
+            <div class="col-sm-10">
+              <input type="file" " id="inputPassword3" name='file' placeholder="Archivo">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-upload" aria-hidden="true"></i> Subir</button>
+            </div>
+          </div>
+
+
+</form>
 
 
 
-
-
-
-
-    <div class="form-group row">
-      <div class="offset-sm-2 col-sm-10">
-        <button type="submit" class="btn btn-primary"><i class="fa fa-upload" aria-hidden="true"></i> Subir</button>
-      </div>
-    </div>
-  </form>
 </div>
     
   </div>
