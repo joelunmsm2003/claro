@@ -20,6 +20,8 @@
   display: flex;
   flex-direction: column;
   padding: $navbar-padding-y $navbar-padding-x;
+  background: $navbar-bg;
+  color: $navbar-color;
 }
 
 
@@ -35,6 +37,7 @@
   font-size: $font-size-lg;
   line-height: inherit;
   white-space: nowrap;
+
 
   @include hover-focus {
     text-decoration: none;
@@ -82,7 +85,7 @@
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
   font-size: $navbar-toggler-font-size;
   line-height: 1;
-  background: transparent; // remove default button style
+  background: $navbar-toggler-color-bg; // remove default button style
   border: $border-width solid transparent; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
 

@@ -24,38 +24,44 @@
 <section class='intro'>
 
 <div class='container'>
+
+  <center><h3 class='text-danger'>Sistema de Tramite Documentario</h3></center>
+
+  <br>
+
       <div class="row">
         
 
       <div class='col-md-4 col-sm-12'>
 
-      <center><h1 class='text-danger'>Sistema de Tramite Documentario</h1></center>
+      
 
-      <img src='/static/images/inbox.svg' class='img-fluid'>
+      <img src='/static/images/logo2.png' class='img-fluid'>
       </div>
 
 
-      <div class="col-md-8 col-sm-12" >
+      <div class="col-md-4 offset-md-2 col-sm-12" >
 
-       <center><h3 class='text-danger'><a href='#'>Ingresar</a>/<a href='#'>Registrarse</a></h3></center>
+       <center><h4 class='text-sucess'><a href='#'>Ingresar </a> / <a href='#'> Registrarse</a></h4></center>
+
+       <br></br>
 
             <form method="post" action="/ingresar/">
 
                 {% csrf_token %}
                 <div class="group">
-                  <label for="user" class="label">Username</label>
-                  <input id="user" name='username' type="text" class="input">
+                  <label for="user" class="label">Email</label>
+                  <input id="user" class='form-control' name='username' type="text" class="input">
                 </div>
                 <div class="group">
-                  <label for="pass" class="label">Password</label>
-                  <input id="pass" name='password' type="password" class="input" data-type="password">
+                  <label for="pass" class="label">Contraseña</label>
+                  <input id="pass" class='form-control' name='password' type="password" class="input" data-type="password">
                 </div>
+
+                <br>
+              
                 <div class="group">
-                  <input id="check" type="checkbox" class="check" checked>
-                  <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                </div>
-                <div class="group">
-                  <input type="submit" class="button" value="Sign In">
+                  <input type="submit" class="btn btn-primary" value="Ingresar">
                 </div>
 
               </form>
