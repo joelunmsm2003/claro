@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^subir$', 'claroapp.views.subir'),
     url(r'^cliente$', 'claroapp.views.cliente'),
     url(r'^uploadfile$', 'claroapp.views.uploadfile'),
+    url(r'^proveedor$', 'claroapp.views.proveedor'),
 
 ]

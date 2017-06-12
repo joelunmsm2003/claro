@@ -56,6 +56,13 @@ def cliente(request):
 	return render(request, 'cliente.html',{})
 
 
+def proveedor(request):
+
+
+
+	return render(request, 'proveedor.html',{})
+
+
 
 def subir(request):
 
